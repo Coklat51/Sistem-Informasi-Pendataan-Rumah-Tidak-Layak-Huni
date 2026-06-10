@@ -1,0 +1,203 @@
+/*-------------------------------------------------------------- # Bottom Bar --------------------------------------------------------------*/
+main.jahat{
+	background: #FFF url(../../images/icon/kepri.png) center no-repeat;
+	background-size: 50%;
+}
+.shadow-md{ box-shadow: .075rem .1rem .12rem .075rem rgba(0,0,0,.35)!important; border-radius: 0.5em; border: 1px outset #FFF; 
+background: transparent;
+background: rgba(255,255,255,.95) none;}
+@media (max-width: 768px) {
+main.jahat{
+	background-size: 90%;
+}
+.shadow-md{
+	background: rgba(255,255,255,.9) none;}
+}
+#header {
+padding: 0;
+height: 5.05em;
+transition: all 0.5s;
+z-index: 997;
+border-bottom: groove 1px #FFF;
+-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.3);
+box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.2);
+background: #303f9f;
+background-image: linear-gradient(45deg, #303f9f, #45cafc);
+}
+#bottombar {
+margin: 0;
+padding: 0;
+font-size: 12px;
+}
+#bottombar .botright a{
+color: #FFF;
+padding: 6px 5px 1px 5px;
+display: inline-block;
+line-height: 1.3rem;
+}
+#bottombar .botleft a{
+color: #FFF;
+padding: 6px 5px 1px 5px;
+line-height: 1.3rem;
+display: inline-block;
+}
+#bottombar .botright a:hover, #bottombar .botleft a:hover {
+color: #50d8af;
+}
+#bottombar .fa{
+ font-size: 1.2rem;
+}
+#bottombar a .badge{
+top: -.65rem;
+position: relative;
+right: .45rem;
+border-radius: 1.175rem;
+line-height: 1.35em;
+padding: 0;
+text-align: center;
+height: .70rem;
+width: .70rem;
+}
+/*-------------------------------------------------------------- # Header--------------------------------------------------------------*/
+#header #logo{
+height: 3.05em;
+left:auto;
+right:auto;
+background: url(../../images/icon/jembatan.png) no-repeat right;
+background-size: 12% 100%;
+}
+#header #logo img {
+padding: 2px 5px 0 0;
+margin: 0;
+height: 45px;
+width:auto;
+}
+#header #logo h1 {
+font-size: 1.6em;
+margin: 0;
+padding: 5px 0 0 0;
+line-height: .75em;
+font-family: "Futura";
+font-weight: 100;
+text-shadow: 1px 1px 2px #000;
+text-align: left;
+vertical-align: middle;
+color: #fff;
+display: inline-block;
+width:auto;
+}
+#header p{
+font-size: .45em;
+text-align:left;
+font-family: Tahoma, Geneva, sans-serif;
+text-shadow: 0px 0px 1px #000;
+}
+
+@media (max-width: 768px) {
+#header #logo{
+background-size: 25% 100%;
+}
+#header p{
+font-size: .35em;
+}
+}
+/*-------------------------------------------------------------- # Navigation Menu /* Menuku */
+.nav-list{
+padding: 0;
+margin-bottom: 0;
+list-style: none;
+margin-left:auto;
+margin-right:auto;
+}
+.nav-list > li {
+float: left;
+width: auto;
+height: auto;
+margin: 0.3em;
+background: transparent;
+}
+#menuku{
+display:block;
+background: transparent;
+width: auto;
+height: auto;
+margin-bottom: 0.2em;
+margin-left: auto;
+margin-right: auto;
+}
+#menuku .menu-text{
+display: block;
+text-align:center;
+font-size: 0.65em;
+font-family: Tahoma, Geneva, sans-serif; 
+color: #000;
+line-height: 1.2em;
+font-weight: 500;
+margin: auto;
+width: 9.5em;
+height: 8em;
+padding: 0 0.2em;
+text-transform:uppercase;
+}
+#menuku > .menu-text > .menu-icon{
+display: block;
+width: 1.4em;
+height: 1.35em;
+margin: 0.2em auto;
+padding: 0;
+line-height: 1.4em;
+font-size: 3.2em;
+font-weight: 100;
+border-width: 1.5px;
+border-style: outset;
+border-image: 
+linear-gradient(
+to bottom, 
+#FFF, 
+rgba(0, 0, 0, 0)
+) 1 100%;
+border-radius: 0.2em;
+}
+.menu-icon:hover {
+animation-name:swing;
+animation-duration: 2s;
+animation-fill-mode:both;
+animation-iteration-count:infinite;
+}
+@media (max-width: 768px) {
+.nav-list{
+width: 100%;
+}
+.nav-list > li {
+width: 22%;
+display:block;
+}
+ #menuku{
+width: 100%;
+}
+#menuku .menu-text{
+font-size: 8.1px;
+}
+#menuku > .menu-text > .menu-icon{
+margin: 0.2em auto;
+width: 1.40em;
+height: 1.35em;
+font-size: 4em;
+line-height: 1.35em;
+}
+}
+#dropdown-y{ height: 20em; overflow-y: auto;} 
+#dropdown-y a.dropdown-item{
+color: #333;
+transition: 0.2s;
+display: block;
+font-size: 13px;
+font-weight: 100;
+text-transform: capitalize;
+width: 100%;
+line-height: .75em;
+padding: 10px 15px;
+text-align:left;
+}
+@media (max-width: 768px){#dropdown-y{ height: 20em;}}

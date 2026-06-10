@@ -1,0 +1,159 @@
+.afi-menu {
+	height: auto;
+	bottom:0;
+	width:100%;
+ 	-webkit-transition: bottom 0.2s;
+ 	transition: bottom 0.2s;
+	padding-top:0px;
+	display: block;
+}
+.afi-menu .container .row .col-lg-12{
+	min-height: 500px;
+}
+.layer{
+   position: fixed;
+   width:100%;
+   height: 100%;
+   overflow-y: auto;
+   top:0px;
+   bottom:0px;
+   left:0px;
+   right:0px;
+   padding: 0 0 30px 0;
+   z-index: 1050;
+   transform: scale(0);
+	transition: .7s;
+}
+.layer .afi-header{
+	padding: .25em 0;
+	display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+	height: 3em;
+}
+.layer .afi-header .close-menu{
+	margin: 0 0 0 auto;
+	float: right;
+	color: #424242;
+	font-size: 24px;
+}
+.nav-list{
+padding: 0;
+margin-bottom: 0;
+list-style: none;
+margin-left:auto;
+margin-right:auto;
+}
+.nav-list > li {
+float: left;
+width: auto;
+height: auto;
+margin: 0.3em;
+background: transparent;
+width: 7.1em;
+}
+#menuku{
+display:block;
+width: auto;
+height: auto;
+margin-bottom: 0.2em;
+margin-left: auto;
+margin-right: auto;
+vertical-align:middle;
+border-radius: .2em;
+}
+#menuku .menu-text{
+display: block;
+margin: auto;
+height: 8.3em;
+padding: 0em 0.2em;
+text-transform: capitalize;
+text-shadow: 1px 1px 2px rgba(255,255,255,0.2);
+color: #000;
+text-align: center;
+background: transparent;
+}
+#menuku .menu-text, .menu-afi a{
+font-size: .8125rem;;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.2em;
+font-weight: 400;
+}
+.mymenu{
+text-transform: capitalize !important;
+}
+h5.judule {
+font-weight:300;
+}
+#menuku > .menu-text > .menu-icon{
+display: block;
+text-align: center;
+width: 3.75rem;
+height:	3.5rem;
+margin: .25rem auto;
+padding: 0;
+font-size: 3.5em;
+font-weight: 100;
+line-height: 1.2em;
+border-radius: .15em;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+box-shadow: 1px 0px 2px rgba(0,0,0,0.5);
+}
+.menu-icon:hover {
+animation-name:bounce;
+animation-duration: 3s;
+animation-fill-mode:both;
+animation-iteration-count:infinite;
+}
+body.getactive {
+  overflow: hidden;
+}
+body.getactive #main, body.getactive #header, body.getactive footer{
+	display: none;
+}
+.leftmenu li a i{
+	display: block;
+}
+.leftmenu li a{
+	text-align:center;
+	vertical-align: middle;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif; 
+	line-height: 1.1em;
+	border-bottom:solid 1px #FFF;
+	padding: 1rem .1rem;
+}
+.leftmenu li a i{
+	font-size: 3.2em;
+	line-height: .5em;
+	padding-bottom: .3em;
+}
+.leftmenu li.disabled{
+	background: #FFF;
+}
+@media (max-width: 768px) {
+.layer .afi-header{
+	padding: .25em .5rem;
+}
+.nav-list{
+width: 100%;
+}
+.nav-list > li {
+width: 23%;
+margin: 0.2em;
+display:block;
+}
+#menuku{
+width: 100%;
+}
+#menuku .menu-text, .leftmenu li a, .menu-afi a{
+font-size: .6rem;
+}
+#menuku > .menu-text > .menu-icon{
+width: 2.65rem;
+height: 2.5rem;
+}
+h2.mymenu{
+	font-size: 12px;
+}
+}
